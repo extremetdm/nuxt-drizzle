@@ -1,6 +1,6 @@
-export default defineEventHandler(async () => {
+export default defineEventHandler(async event => {
 
-  const db = useDrizzle();
+  const db = useDrizzle(event);
 
   const a = await db.select().from(users).execute();
 

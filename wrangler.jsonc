@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "nuxt-app",
+  "main": "./.output/server/index.mjs",
+  "compatibility_date": "2026-09-03",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./.output/public/"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "test",
+      "database_id": "d85c9d19-f4c5-4065-ad03-3b3b87c1dd7a",
+      "migrations_dir": "./server/database/migrations"
+    }
+  ],
+}
