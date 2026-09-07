@@ -11,7 +11,7 @@
     "migrate:local": "npx wrangler d1 migrations apply DB --local",
     "migrate:remote": "npx wrangler d1 migrations apply DB --remote",
     "studio": "npx drizzle-kit studio",
-    "deploy": "pnpm run build && wrangler deploy",
+    "deploy": "pnpm run build && pnpm run migrate:remote && wrangler deploy",
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
