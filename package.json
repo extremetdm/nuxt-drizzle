@@ -23,7 +23,6 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@types/pg": "^8.15.5",
     "drizzle-kit": "^0.31.4",
     "nitro-cloudflare-dev": "^0.2.2",
     "wrangler": "^4.129.0"
